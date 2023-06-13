@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .my-loading {
+            height: 100vh;
+            width: 100%;
+            background-color: #f4f4f4;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .my-loading {
+                background-color: #333;
+                color: #eaeaea;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div
+        class="my-loading ">
+        <img src="/Spin-1s-200px.svg" style="width: 80px;height: 80px" alt="spin" />
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
