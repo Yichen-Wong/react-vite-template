@@ -1,7 +1,7 @@
 import { css } from "@emotion/react"
 import { useAppDispatch, useAppSelector } from "@/hooks"
 import { useNavigate } from "react-router-dom"
-import ThemeToggle from "@/components/themeToggle"
+import ThemeToggle from "../../components/ThemeToggle"
 
 function Index() {
     const user = useAppSelector(state => state.user)
